@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'font-black';
+    src: url('fonts/Pretendard-Black.woff');
+}
+
+@font-face {
+    font-family: 'font-light';
+    src: url('fonts/Pretendard-Light.woff');
+}
+
+@font-face {
+    font-family: 'font-regular';
+    src: url('fonts/Pretendard-Regular.woff');
+}
+@font-face {
+    font-family: 'font-m';
+    src: url('fonts/Pretendard-Medium.woff');
+}
+@font-face {
+    font-family: 'font-bold';
+    src: url('fonts/Pretendard-Bold.woff');
+}
+
+@font-face {
+    font-family: 'font-semibold';
+    src: url('fonts/Pretendard-SemiBold.woff');
+}
+
+
+.project{
+        animation: 0.6s ease-in-out loadEffect; 
+}   
+
+@keyframes loadEffect {
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    65%{
+        opacity: 0.65;
+        transform: scale(1.01);
+    }
+    85%{
+        opacity: 0.85;
+        transform: scale(0.97);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.title {
+    font-size: 24px;
+    font-family: 'font-semibold';
+    margin-bottom: 30px;
+}
+.title img{
+    width: 20px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.wrapper {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-around;
+    transition: all 0.5s;
+}
+
+.wrapper .pic {
+    width: 35vw;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items : center;
+    word-break: keep-all;
+    width: 35vw;
+    transition: all 0.5s;
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'font-regular';
+    margin-top: 2rem;
+}
+.logo li{
+    width: 100%;
+}
+
+.logo img{
+    width: 40px;
+    height: 40px;
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+    .wrapper {
+        flex-wrap: wrap;
+        transition: all 0.5s;
+    }
+
+.wrapper .pic {
+    width:60vw;
+    margin: 0 auto;
+    
+}
+
+.text {
+    margin: 40px 0;
+    width: 60vw;
+}
+
+
+}
+
+
+@media only screen and (max-width:767px){
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .wrapper .pic {
+        width: 60vw;
+        transition-delay: 0.4s;
+    }
+
+    .text {
+        margin: 40px 0;
+        width: 60vw;
+
+    }
+    
+    .logo{
+        flex-wrap: wrap;
+    }
+    .logo li{
+        width: 20vw;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .logo img{
+        width: 25px;
+        height: 25px;
+    }
+}
