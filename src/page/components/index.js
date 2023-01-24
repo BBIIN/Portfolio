@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import 'style/index.css'
-import React, { useState, useEffect } from 'react'
 
 function Index(){
 
