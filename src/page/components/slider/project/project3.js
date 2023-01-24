@@ -9,7 +9,7 @@ import link from 'style/image/link.png'
 function Project3(){
     return(
         <div className="project">
-            <h2 className="title">Portfolio site<img src={link}/></h2>
+            <h2 className="title">Portfolio site<a href=" https://BBIN.github.io"><img src={link}/></a></h2>
             <div className="wrapper">
                 <S.img src={pic} className="pic"/>
                 <div className="text">

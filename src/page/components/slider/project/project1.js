@@ -12,7 +12,7 @@ import link from 'style/image/link.png'
 function Project1(){
     return(
         <div className="project">
-            <h2 className="title">Triple clone coding<img src={link}/></h2>
+            <h2 className="title">Triple clone coding<a href='https://github.com/BBIIN/Project_Triple'><img src={link}/></a></h2>
             <div className="wrapper">
                 <img src={triple} className="pic"/>
                 <div className="text">
